@@ -301,7 +301,7 @@ export default {
     addTag (newTag) {
       const tag = {
         label: newTag,
-        value: 'false-'+newTag,
+        value: newTag,
       }
       this.options.push(tag)
       
