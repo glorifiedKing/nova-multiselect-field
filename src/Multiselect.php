@@ -339,4 +339,14 @@ class Multiselect extends Field implements RelatableField
     {
         return $this->withMeta(['asHtml' => true]);
     }
+
+    /**
+     * Add Tag functionality.
+     *
+     * @return $this
+     */
+    public function taggable($taggable = true)
+    {
+        return $this->withMeta(['taggable' => $taggable]);
+    }
 }
